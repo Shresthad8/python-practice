@@ -1,0 +1,17 @@
+
+
+thislist = ["a", "b", "c"]
+
+Practice Problems
+
+Problem 1: The Duplicate Detector
+Task: Given a list of numbers, return True if any value appears at least twice, 
+and False if every element is distinct.
+
+def conatains_duplicate(nums):
+    seen = set()
+    for n in nums:
+      if n in seen:
+        return True
+      seen.add(n)
+    return False
