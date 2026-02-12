@@ -20,3 +20,32 @@ print(x)
 print(y)
 print(z)
 
+#strings and operators
+
+b = "Hello World"
+print(b[:7])
+
+a = " Hello, World! "
+print(a.strip()) # returns "Hello, World!"
+
+age = 36
+txt = "My name is John, I am " + str(age)
+print(txt)
+
+
+quantity = 3
+itemno = 567
+price = 49.95
+myorder = "I want {} pieces of item {} for {} dollars."
+print(myorder.format(quantity, itemno, price))
+
+import random
+print(random.randrange(1, 10))
+
+
+x = ["apple", "banana"]
+y = ["apple", "banana"]
+z = x
+
+print(x is not z)
+print(x is not y)
