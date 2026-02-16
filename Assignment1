@@ -1,0 +1,66 @@
+# Q1. String Cleaning & Transformation
+from doctest import OutputChecker
+
+
+def str_cleaning(sentence):
+    vowels = "aeiouAEIOU"
+    no_vowels = ""
+
+    for char in sentence:
+        if char not in vowels:
+            no_vowels += char
+
+    with_underscores = ""
+    for char in no_vowels:
+        if char == " ":
+            with_underscores += "_"
+        else:
+            with_underscores += char
+
+    return with_underscores.title()
+
+
+print(str_cleaning("data engineering rocks"))
+# Output: Dt_Ngnrng_Rcks
+
+
+# Q2 Dictionary Aggregation
+
+sales = [
+    {"product": "Pen", "amount": 10},
+    {"product": "Book", "amount": 20},
+    {"product": "Pen", "amount": 15},
+    {"product": "Pencil", "amount": 5}
+]
+
+total = {}
+
+for item in sales:
+    product = item["product"]
+    amount = item["amount"]
+    total[product] = total.get(product, 0) + amount
+
+for product, total in total.items():
+    print(f"{product}: {total}")
+
+# Output
+# Pen: 25
+# Book: 20
+# Pencil: 5
+
+#Q3 Unique Numbers in List
+def unique_numbers(nums):
+    unique_list = []
+    occurence = 0
+    for x in nums:
+        occurence = nums.count(x)
+        if occurence == 1:
+            unique_list.append(x)
+
+    return unique_list
+
+# Example
+# input_list = [4, 5, 4, 6, 7, 5, 8]
+# print(unique_numbers(input_list))
+# Output
+# [6,7,8]
