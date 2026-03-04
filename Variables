@@ -86,3 +86,17 @@ def is_palindrome(text):
 print(is_palindrome("racecar"))  # True
 print(is_palindrome("Hello"))    # False
 print(is_palindrome("A nut for a jar of tuna")) # True
+
+
+
+
+# The Data: List of Celsius readings (some are corrupted/None)
+readings = [20.5, None, 22.1, 19.8, None, 25.0]
+
+# The Solution: List Comprehension with Conditional
+def clean_and_convert(data):
+    # Filter out None and apply formula: (C * 9/5) + 32
+    return [round((temp * 9/5) + 32, 2) for temp in data if temp is not None]
+
+print(f"Fahrenheit Readings: {clean_and_convert(readings)}")
+# Output: [68.9, 71.78, 67.64, 77.0]
