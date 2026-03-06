@@ -15,3 +15,15 @@ def conatains_duplicate(nums):
         return True
       seen.add(n)
     return False
+
+
+
+#Count words in a sentence
+
+sentence = "I love learning python programming"
+
+words = sentence.split()
+
+count = len(words)
+
+print("Number of words:", count)
