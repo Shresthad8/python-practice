@@ -100,3 +100,15 @@ def clean_and_convert(data):
 
 print(f"Fahrenheit Readings: {clean_and_convert(readings)}")
 # Output: [68.9, 71.78, 67.64, 77.0]
+
+
+
+
+a = 5
+b = 10
+
+# The Pythonic way (Tuple Unpacking)
+a, b = b, a
+
+print(f"a is {a}, b is {b}") 
+# Output: a is 10, b is 5
