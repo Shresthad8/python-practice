@@ -112,3 +112,17 @@ a, b = b, a
 
 print(f"a is {a}, b is {b}") 
 # Output: a is 10, b is 5
+
+
+
+# The Data: List of Celsius readings (some are corrupted/None)
+readings = [20.5, None, 22.1, 19.8, None, 25.0]
+
+# The Solution: List Comprehension with Conditional
+def clean_and_convert(data):
+    # Filter out None and apply formula: (C * 9/5) + 32
+    return [round((temp * 9/5) + 32, 2) for temp in data if temp is not None]
+
+print(f"Fahrenheit Readings: {clean_and_convert(readings)}")
+# Output: [68.9, 71.78, 67.64, 77.0]
+
