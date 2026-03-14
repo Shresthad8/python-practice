@@ -176,3 +176,25 @@ z = x
 print(x is not z)
 print(x is not y)
 
+x = 'John'
+y = 10
+
+print(type(x))
+
+fruits = ["apple", "banana", "cherry"]
+x, y, z = fruits
+print(x)
+print(y)
+print(z)
+
+#strings and operators
+
+b = "Hello World"
+print(b[:7])
+
+a = " Hello, World! "
+print(a.strip()) # returns "Hello, World!"
+
+age = 36
+txt = "My name is John, I am " + str(age)
+print(txt)
