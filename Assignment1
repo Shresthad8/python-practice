@@ -64,3 +64,26 @@ def unique_numbers(nums):
 # print(unique_numbers(input_list))
 # Output
 # [6,7,8]
+
+
+# Output
+# Pen: 25
+# Book: 20
+# Pencil: 5
+
+#Q3 Unique Numbers in List
+def unique_numbers(nums):
+    unique_list = []
+    occurence = 0
+    for x in nums:
+        occurence = nums.count(x)
+        if occurence == 1:
+            unique_list.append(x)
+
+    return unique_list
+
+# Example
+# input_list = [4, 5, 4, 6, 7, 5, 8]
+# print(unique_numbers(input_list))
+# Output
+# [6,7,8]
