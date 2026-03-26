@@ -247,3 +247,16 @@ print(f"Fahrenheit Readings: {clean_and_convert(readings)}")
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+
+
+
+for num in range(1, 51):
+    # Check if divisible by both 3 and 5
+    if num % 3 == 0 and num % 5 == 0:
+        print("FizzBuzz")
+    elif num % 3 == 0:
+        print("Fizz")
+    elif num % 5 == 0:
+        print("Buzz")
+    else:
+        print(num)
