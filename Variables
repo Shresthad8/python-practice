@@ -282,3 +282,16 @@ x, y, z = fruits
 print(x)
 print(y)
 print(z)
+
+#variables
+
+x = 'John'
+y = 10
+
+print(type(x))
+
+fruits = ["apple", "banana", "cherry"]
+x, y, z = fruits
+print(x)
+print(y)
+print(z)
