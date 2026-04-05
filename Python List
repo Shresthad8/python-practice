@@ -27,3 +27,11 @@ words = sentence.split()
 count = len(words)
 
 print("Number of words:", count)
+
+def conatains_duplicate(nums):
+    seen = set()
+    for n in nums:
+      if n in seen:
+        return True
+      seen.add(n)
+    return False
