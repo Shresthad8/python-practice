@@ -71,6 +71,11 @@ price = 49.95
 myorder = "I want {} pieces of item {} for {} dollars."
 print(myorder.format(quantity, itemno, price))
 
+age = 36
+txt = "My name is John, I am " + str(age)
+print(txt)
+
+
 import random
 print(random.randrange(1, 10))
 
