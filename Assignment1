@@ -49,6 +49,11 @@ sales = [
     {"product": "Pencil", "amount": 5}
 ]
 
+def str_cleaning(sentence):
+    vowels = "aeiouAEIOU"
+    no_vowels = ""
+
+
 total = {}
 
 for item in sales:
