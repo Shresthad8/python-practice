@@ -70,6 +70,10 @@ Problem 1: The Duplicate Detector
 Task: Given a list of numbers, return True if any value appears at least twice, 
 and False if every element is distinct.
 
+def print_hi(name):
+    # Use a breakpoint in the code line below to debug your script.
+    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+
 
 Problem 1: The Duplicate Detector
 Task: Given a list of numbers, return True if any value appears at least twice, 
