@@ -11,6 +11,10 @@ def str_cleaning(sentence):
     vowels = "aeiouAEIOU"
     no_vowels = ""
 
+def str_cleaning(sentence):
+    vowels = "aeiouAEIOU"
+    no_vowels = ""
+
 
 def str_cleaning(sentence):
     vowels = "aeiouAEIOU"
